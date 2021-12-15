@@ -1,0 +1,15 @@
+2021-11-26T10:10:58+00:00 CRITICAL Unclosed '{' on line 4 in C:\xampp\htdocs\webshop\wp-content\themes\webshop\functions.php on line 30
+
+2021-11-26T14:19:21+00:00 CRITICAL Uncaught TypeError: Automattic\WooCommerce\GoogleListingsAndAds\ActionScheduler\ActionScheduler::cancel(): Return value must be of type string, int returned in C:\xampp\htdocs\webshop\wp-content\plugins\google-listings-and-ads\src\ActionScheduler\ActionScheduler.php:171
+Stack trace:
+#0 C:\xampp\htdocs\webshop\wp-content\plugins\google-listings-and-ads\src\Notes\NoteInitializer.php(119): Automattic\WooCommerce\GoogleListingsAndAds\ActionScheduler\ActionScheduler->cancel('wc_gla_cron_dai...')
+#1 C:\xampp\htdocs\webshop\wp-content\plugins\google-listings-and-ads\src\Infrastructure\GoogleListingsAndAdsPlugin.php(74): Automattic\WooCommerce\GoogleListingsAndAds\Notes\NoteInitializer->deactivate()
+#2 C:\xampp\htdocs\webshop\wp-content\plugins\google-listings-and-ads\google-listings-and-ads.php(66): Automattic\WooCommerce\GoogleListingsAndAds\Infrastructure\GoogleListingsAndAdsPlugin->deactivate()
+#3 C:\xampp\htdocs\webshop\wp-includes\class-wp-hook.php(303): {closure}(false)
+#4 C:\xampp\htdocs\webshop\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\webshop\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\webshop\wp-admin\includes\plugin.php(821): do_action('deactivate_goog...', false)
+#7 C:\xampp\htdocs\webshop\wp-admin\plugins.php(250): deactivate_plugins(Array, false, false)
+#8 {main}
+  thrown in C:\xampp\htdocs\webshop\wp-content\plugins\google-listings-and-ads\src\ActionScheduler\ActionScheduler.php on line 171
+

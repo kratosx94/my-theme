@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1b67b581-3dc8-4eff-abf4-4597f65f3f92" name="localhost" url="http://localhost">
+        <fileTransfer mountedRoot="C:\xampp\htdocs\webshop\wp-content\themes\webshop" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
