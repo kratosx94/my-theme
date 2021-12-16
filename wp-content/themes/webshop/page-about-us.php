@@ -23,7 +23,7 @@
                             //if there is no post it will display there is nothing here
                             else:
                                 ?>
-                                <p> there is nothing here</p>
+                                <p> <?php _e('there is nothing here','mywebshop') ?> </p>
                             <?php  // ending if statement
                             endif;
                             ?>

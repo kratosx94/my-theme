@@ -1,6 +1,6 @@
 <?php
 
-// theme customizer require
+// requiring theme customizer
 require get_template_directory() . '/inc/customizer.php';
 
 function my_function_register_style()
@@ -69,10 +69,10 @@ function my_sidebars(){
             'name'=> __('homepage sidebar','mywebshop'),
             'id' => __('sidebar-1','mywebshop'),
             'description' => __('this is the home page sidebar, add your widgets here','mywebshop'),
-            'before_widget' => '<div class="widget-wrapper">',
-            'after_widget'=> '</div>',
-            'before_title' => '<h2 class="widget-title">',
-            'after_title' => '</h2>'
+            'before_widget' => __('<div class="widget-wrapper">','mywebshop'),
+            'after_widget'=> __('</div>','mywebshop'),
+            'before_title' => __('<h2 class="widget-title">','mywebshop' ),
+            'after_title' => __('</h2>', 'mywebshop')
 
         )
     );
@@ -81,9 +81,9 @@ function my_sidebars(){
             'name'=> __('blog sidebar','mywebshop'),
             'id' => __('sidebar-2','mywebshop'),
             'description' => __('this is the blog page sidebar, add your widgets here', 'mywebshop'),
-            'before_widget' => '<div class="widget-wrapper">',
-            'after_widget'=> '</div>',
-            'before_title' => '<h2 class="widget-title">',
+            'before_widget' => __('<div class="widget-wrapper">','mywebshop'),
+            'after_widget'=> __('</div>','mywebshop'),
+            'before_title' => __('<h2 class="widget-title">','mywebshop'),
             'after_title' => '</h2>'
 
         )
@@ -91,9 +91,20 @@ function my_sidebars(){
 
     register_sidebar(
         array(
-            'name' => 'Service 1',
-            'id' => 'services-1',
-            'description' => 'First Services Area. ',
+            'name' => __('Service 1','mywebshop'),
+            'id' => __('services-1','mywebshop'),
+            'description' => __('First Services Area. ','mywebshop'),
+            'before_widget' => __('<div class="widget-wrapper">','mywebshop'),
+            'after_widget' => __('</div>','mywebshop'),
+            'before_title' => __('<h2 class="widget-title">','mywebshop'),
+            'after_title' => __('</h2>','mywebshop')
+        )
+    );
+    register_sidebar(
+        array(
+            'name' => __('Service 2','mywebshop'),
+            'id' => __('services-2','mywebshop'),
+            'description' => __('Second Services Area. ','mywebshop'),
             'before_widget' => '<div class="widget-wrapper">',
             'after_widget' => '</div>',
             'before_title' => '<h2 class="widget-title">',
@@ -102,9 +113,9 @@ function my_sidebars(){
     );
     register_sidebar(
         array(
-            'name' => 'Service 2',
-            'id' => 'services-2',
-            'description' => 'Second Services Area. ',
+            'name' => __('Service 3','mywebshop'),
+            'id' => __('services-3', 'mywebshop'),
+            'description' => __('Third Services Area. ','mywebshop'),
             'before_widget' => '<div class="widget-wrapper">',
             'after_widget' => '</div>',
             'before_title' => '<h2 class="widget-title">',
@@ -113,20 +124,9 @@ function my_sidebars(){
     );
     register_sidebar(
         array(
-            'name' => 'Service 3',
-            'id' => 'services-3',
-            'description' => 'Third Services Area. ',
-            'before_widget' => '<div class="widget-wrapper">',
-            'after_widget' => '</div>',
-            'before_title' => '<h2 class="widget-title">',
-            'after_title' => '</h2>'
-        )
-    );
-    register_sidebar(
-        array(
-            'name' => 'social-media',
-            'id' => 'social-media',
-            'description' => 'Social media  ',
+            'name' => __('social-media','mywebshop'),
+            'id' => __('social-media','mywebshop'),
+            'description' => __('Social media  ','mywebshop'),
             'before_widget' => '<div class="widget-wrapper">',
             'after_widget' => '</div>',
             'before_title' => '<h2 class="widget-title">',

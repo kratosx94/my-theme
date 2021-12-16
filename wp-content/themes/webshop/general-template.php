@@ -21,14 +21,14 @@
                                         <h2><?php the_title(); ?></h2>
                                         <p><?php the_content();?></p>
                                     </article>
-                                <p> this is about us page from the general-template page </p>
+                                <p> <?php _e('this is about us page from the general-template page','mywebshop') ?></p>
 
                                 <?php //ending while statement
                                 endwhile;
                             //if there is no post it will display there is nothing here
                             else:
                                 ?>
-                                <p> there is nothing here</p>
+                                <p> <?php _e('there is nothing here','mywebshop') ?> </p>
                             <?php  // ending if statement
                             endif;
                             ?>

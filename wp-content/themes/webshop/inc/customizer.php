@@ -46,8 +46,8 @@
      $wp_customize-> add_control('map_ctrl',
          array
          (
-             'label' => 'Google maps api',
-             'description' => 'Api <a target="_blank" href="https://console.developers.google.com/flows/enableapi?apiid=maps_backend">here </a>',
+             'label' => __('Google maps api','mywebshop'),
+             'description' => __('Api <a target="_blank" href="https://console.developers.google.com/flows/enableapi?apiid=maps_backend">here </a>','mywebshop'),
              'section' => 'sec_map',
              'settings' => 'map_settings',
              'type' => 'text'

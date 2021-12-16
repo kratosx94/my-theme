@@ -23,8 +23,8 @@ $title = get_field('page_title' );
                                 // blog page pagination
                             the_posts_pagination(
                                 array(
-                                    'prev_text' => 'Previous',
-                                    'next_text' => 'Next'
+                                    'prev_text' => __('Previous','mywebshop'),
+                                    'next_text' => __('Next','mywebshop')
                                 )
                             );
                                 ?>
@@ -42,7 +42,7 @@ $title = get_field('page_title' );
                                 //if there is no post it will display there is nothing here
                                 else:
                                 ?>
-                                <p> there is nothing here</p>
+                                <p> <?php _e('there is nothing here','mywebshop') ?></p>
                                 <?php  // ending if statement
                                     endif;
                                     ?>
