@@ -6,8 +6,8 @@
      $wp_customize-> add_section('my_copyright',
      array
      (
-        'title' => 'Copyright',
-        'description' => 'Type your copyrights'
+        'title' => __('Copyright','mywebshop'),
+        'description' => __('Type your copyrights','mywebshop')
      ));
 
      $wp_customize-> add_setting('copyright_settings',
@@ -21,8 +21,8 @@
      $wp_customize-> add_control('copyright_ctrl',
          array
          (
-             'label' => 'copyright information',
-             'description' => 'please type your copyright',
+             'label' => __('copyright information','mywebshop'),
+             'description' => __('please type your copyright','mywebshop'),
              'section' => 'my_copyright',
              'settings' => 'copyright_settings',
              'type' => 'text'
@@ -64,8 +64,8 @@
      $wp_customize-> add_control('map_ctrl_address',
          array
          (
-             'label' => 'type address',
-             'description' => 'No special characters please',
+             'label' => __('type address','mywebshop'),
+             'description' => __('No special characters please','mywebshop'),
              'section' => 'sec_map',
              'settings' => 'settings_map_address',
              'type' => 'textarea'
