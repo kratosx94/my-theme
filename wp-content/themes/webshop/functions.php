@@ -1,7 +1,10 @@
 <?php
 
-// requiring theme customizer
+// requiring   customizer
 require get_template_directory() . '/inc/customizer.php';
+// TGm plugin activation
+require_once get_template_directory() . '/inc/class-tgm-plugin-activation.php';
+require_once get_template_directory() . '/inc/required-plugins.php';
 
 function my_function_register_style()
     {
@@ -56,7 +59,29 @@ function my_webshop_theme_config(){
     ));
 
     $textdomain = 'mywebshop';
+    load_theme_textdomain($textdomain,get_stylesheet_directory(). '/languages/');
     load_theme_textdomain($textdomain,get_template_directory(). '/languages/');
+
+    // adding gutenberg theme support features
+    add_theme_support('align-wide');
+    // adding youtube links support
+    add_theme_support('responsive-embeds');
+    //
+    add_theme_support('editor-color=-palette',
+    array
+    (
+        'name'=> __('reddish','mywebshop'),
+        'slug'=> 'reddish',
+        'color' => '#b0121b'
+    ),
+        array
+        (
+            'name'=> __('white','mywebshop'),
+            'slug'=> 'white',
+            'color' => '#fffff'
+        )
+
+    );
 }
 add_action('after_setup_theme','my_webshop_theme_config', 0);
 
@@ -88,7 +113,6 @@ function my_sidebars(){
 
         )
     );
-
     register_sidebar(
         array(
             'name' => __('Service 1','mywebshop'),
